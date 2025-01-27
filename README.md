@@ -7,7 +7,7 @@
   <li>Saubere responsive Darstellung</li>
   <li>Accessibility</li>
 </ul>
-<p>Die Komponente(n) soll sich sich vom Inhalt & Style her möglichst nahe an diesem Beispiel orientieren (fonts sind egal): <a href="https://www.speluca.ch/" target="_blank">https://www.speluca.ch/</a></p><img src="./src/assets/demo.png"/>
+<p>Die Komponente(n) soll(en) sich vom Inhalt & Style her möglichst nahe an diesem Beispiel orientieren (fonts sind egal): <a href="https://www.speluca.ch/" target="_blank">https://www.speluca.ch/</a></p><img src="./src/assets/demo.png"/>
 <p>Die Liste soll weiters über eine <strong>Sortier- und Filterfunktion</strong> verfügen. Style & Funktionsumfang nach eigenem ermessen.</p>
 <p>Die in diesem Projekt vorinstallierten Packages können nach belieben verwendet werden, es können auch weitere Packages installiert werden sofern notwendig. Die installation weiterer Packages sollte sich jedoch auf ein minimum beschränken. Der Einsatz von AI Tools oder anderen Hilfsmitteln ist gestattet, die damit erstellten Codestellen sollen aber erklärbar sein.</p>
 <p>Für die Daten kannst du die in diesem Projekt vorhandenen Mock Daten verwenden. Etwaige Unklarheiten können nach eigenem Ermessen ergänzt und adaptiert werden, kreative Lösungen sind erwünscht!</p>

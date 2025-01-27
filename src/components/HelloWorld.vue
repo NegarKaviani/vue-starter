@@ -23,18 +23,18 @@
         <li>Accessibility</li>
       </ul>
 
-      <p>Die liste soll sich sich vom Inhalt & Style her möglichst nahe an diesem Beispiel orientieren
+      <p>Die Komponente(n) soll sich sich vom Inhalt & Style her möglichst nahe an diesem Beispiel orientieren
         (fonts sind egal): <a href="https://www.speluca.ch/" target="_blank">https://www.speluca.ch/</a><br>
-        Unklarheiten können nach eigenem Ermessen ergänzt werden.
       </p>
       <img src="../assets/demo.png"/>
-      <p>Für die Daten kannst du die in diesem Projekt vorhandenen Mock Daten verwenden.
-        Die Liste soll weiters über eine <strong>Sortier- und Filterfunktion</strong> verfügen.
+      <p>Die Liste soll weiters über eine <strong>Sortier- und Filterfunktion</strong> verfügen.
         Style & Funktionsumfang nach eigenem ermessen.</p>
       <p>Die in diesem Projekt vorinstallierten Packages können nach belieben verwendet werden, es können auch weitere
         Packages installiert werden sofern notwendig. Die installation weiterer Packages sollte sich jedoch auf ein
         minimum beschränken. Der Einsatz von AI Tools oder anderen Hilfsmitteln ist gestattet, die damit erstellten
         Codestellen sollen aber erklärbar sein.</p>
+      <p>Für die Daten kannst du die in diesem Projekt vorhandenen Mock Daten verwenden. Etwaige Unklarheiten können
+        nach eigenem Ermessen ergänzt und adaptiert werden, kreative Lösungen sind erwünscht!</p>
       <p>Arbeite so weit du kommst, die Komponente(n) müssen nicht zwingend 100% fertig werden. Wir werden das
         Geschaffte und Ausblick auf die restlichen Punkte am Ende zusammen durchbesprechen.</p>
       <p><strong>Frohes Schaffen!</strong></p>

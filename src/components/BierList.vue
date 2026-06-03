@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="filter">
-      <label for="filter">Filter by Availability:</label>
+      <label for="filter">Filter by Availability: </label>
       <select v-model="selectedType" id="filter">
         <option value="">All</option>
         <option value="available">Available</option>
-        <option value="notavailable">Not Available</option>
+        <option value="sold_out">Not Available</option>
       </select>
     </div>
 
@@ -35,11 +35,11 @@ const filteredbiers = computed(() => {
   }
 
   if (selectedType.value === 'available') {
-    return props.biers.filter(bier => bier.available > 0); // Filter by available
+    return props.biers.filter(bier => bier.state === 'available'); // Filter by available
   }
 
-  if (selectedType.value === 'notavailable') {
-    return props.biers.filter(bier => bier.available === 0); // Filter by not available
+  if (selectedType.value === 'sold_out') {
+    return props.biers.filter(bier => bier.state === 'sold_out'); // Filter by sold out
   }
 
   return props.biers;
@@ -48,11 +48,15 @@ const filteredbiers = computed(() => {
 
 <style scoped>
 .filter {
+  width: 100%;
   margin: 20px 0;
 }
 
 select {
   padding: 8px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .bier-list {

@@ -2,7 +2,7 @@
   <div class="bier-card">
     <img :src="bier.image.source" :alt="bier.descriptionShort" />
     <h3>{{ bier.name }}</h3>
-    <p><strong>Avaliability:</strong> {{ bier.available }}%</p>
+    <p><strong>Avaliability:</strong> {{ bier.state }}</p>
     <p><strong>Price:</strong> {{ bier.price }}%</p>
     <p>{{ bier.description }}</p>
   </div>

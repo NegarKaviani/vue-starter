@@ -1,9 +1,9 @@
-<template style="background-color: #374650;">
-  <BurgerMenu></BurgerMenu>
-  <h1 class="page-title">Home</h1>
-  <!-- Conditionally render ProductList after the component has mounted -->
-  <ProductList v-if="isMounted" :products="products" />
-  <!-- <p v-if="isMounted">ProductList is mounted!</p> -->
+<template>
+  <div class="page-container">
+    <BurgerMenu></BurgerMenu>
+    <h1 class="page-title">Ferienwohnungen</h1>
+    <p class="page-description">This is the Ferienwohnungen view.</p>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -12,23 +12,30 @@ import BurgerMenu from "@/components/FullWidthMenu.vue";
 import ProductList from "@/components/ProductList.vue";
 import { demoMockData } from '../../shared/mock/product.mock';
 
-// Create a reactive variable to store products
 const products = ref(demoMockData);
-
-// Create a reactive variable to control when the component is mounted
 const isMounted = ref(false);
 
-// Lifecycle hook: set isMounted to true once the component has been mounted
 onMounted(() => {
   isMounted.value = true;
 });
 </script>
 
 <style scoped lang="scss">
+.page-container {
+  width: 100%;
+}
+
 .page-title {
   text-align: center;
   margin: 20px 0;
   font-size: 2rem;
   color: #333;
+}
+
+.page-description {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #666;
 }
 </style>

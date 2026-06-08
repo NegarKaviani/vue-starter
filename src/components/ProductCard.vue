@@ -1,16 +1,16 @@
 <template>
-  <div class="bier-card">
-    <img :src="bier.image.source" :alt="bier.descriptionShort" />
-    <h3>{{ bier.name }}</h3>
-    <p><strong>Avaliability:</strong> {{ bier.state }}</p>
-    <p><strong>Price:</strong> {{ bier.price }}%</p>
-    <p>{{ bier.description }}</p>
+  <div class="product-card">
+    <img :src="product.image.source" :alt="product.descriptionShort" />
+    <h3>{{ product.name }}</h3>
+    <p><strong>Avaliability:</strong> {{ product.state }}</p>
+    <p><strong>Price:</strong> {{ product.price }}%</p>
+    <p>{{ product.description }}</p>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  bier: {
+  product: {
     type: Object,
     required: true,
   },
@@ -18,7 +18,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.bier-card {
+.product-card {
   width: 400px; /* Default width for larger screens */
   background-color: #f4f4f4;
   border: 1px solid #ddd;
@@ -28,7 +28,7 @@ const props = defineProps({
   transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
-.bier-card img {
+.product-card img {
   width: 100%;
   border-radius: 4px;
 }
@@ -45,7 +45,7 @@ p {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-  .bier-card {
+  .product-card {
     width: 180px; /* Smaller width on tablets */
   }
 
@@ -59,7 +59,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .bier-card {
+  .product-card {
     width: 160px; /* Even smaller width on smaller devices */
   }
 
@@ -73,7 +73,7 @@ p {
 }
 
 @media (max-width: 480px) {
-  .bier-card {
+  .product-card {
     width: 100%; /* Smallest width on mobile */
   }
 
@@ -87,7 +87,7 @@ p {
 }
 
 /* Hover effect */
-.bier-card:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+.product-card:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
 }
 </style>
